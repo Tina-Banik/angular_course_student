@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <header class="jumbotron">All Student Details</header>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Student Email</th>
+                <th>Student Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of filterStd">
+                <td>{{s.student_email}}</td>
+                <td>{{s.student_name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

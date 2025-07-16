@@ -1,0 +1,16 @@
+<header class="jumbotron text-center">| All Courses |</header>
+<div class="container-fluid">
+  <div class="card-columns">
+    <div class="card bg-white" *ngFor="let c of allCourseLists">
+      <div class="card-body text-center">
+        <p class="card-text">{{c.course_name}}</p>
+        <p class="card-text">{{c.course_fees}}</p>
+        <p class="card-text">
+            <img src="{{c.course_image}}" alt="{{c.course_image}}" height="50px">
+        </p>
+        <p class="card-text">
+           <button class="btn btn-sm btn-warning" (click)="view(c)">VIEW</button>
+        </p>
+      </div>
+    </div>
+</div>
